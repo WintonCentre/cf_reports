@@ -1,0 +1,155 @@
+## Mappings between variables as coded in Qualtrics and as they appear in Results_TidyClean.tsv.txt
+
+Of the variables in Results_TidyClean.tsv.txt that were involved in the analyses in the paper, the variable names and their interpretation should be clear from the accompanying R file and its output. 
+
+However, before these R analyses were completed, some variables were assigned unintuitive codes by Qualtrics and had to be remapped. For example, selecting "1" as the answer to the question "How many adults (including you) are in your household?" caused a '4' to be recorded in the Adults-in-House column; this had to then be remapped to '1' in the Adults-in-House-Value column. This remapping was done by the code in analysis_genetics1.
+
+The remainder of this file details all cases where the numeric code assigned to an answer by Qualtrics differs from the actual answer - either because of a non-intuitive numeric mapping as described in the previous paragraph, or because the user selected an answer to a multiple-choice question that Qualtrics mapped to a numeric value. They are shown below in the format: 
+*** Qualtrics-Variable-Name ***
+Qualtrics code (on left)	Answer provided by user (on right)
+
+
+*** Adults-in-House *** (remapped to Adults-in-House-Value)
+4	1
+5	2
+6	3
+7	4
+8	5
+9	6
+
+*** CF-Experience *** (remapped to CF-Experience-Value)
+1	Yes
+2	No
+
+*** Children-in-House *** (remapped to Children-in-House-Value)
+4	0
+5	1
+6	2
+7	3
+9	5
+10	6
+
+*** Combined-Income *** (remapped to income-lower-bound, which contains a single number representing the lower bound of each one of these ranges)
+1	Less than £10k
+2	£10k to £20k
+3	£31k to £40k
+5	£21k to £30k
+6	£41k to £50k
+7	£51k to £60k
+8	£61k to £70k
+9	£71k to £80k
+10	£81k to £90k
+11	More than £91k
+
+*** Education ***  (raw values used in exploratory analyses; see R file)
+2	GCSE or equivalent (e.g., level 2 NVQ)
+3	A-Level or equivalent (e.g., IB or level 3 NVQ)
+4	Bachelors (e.g., BA, BSc)
+5	Masters (e.g., MA, MSc)
+7	Doctoral (e.g., PhD)
+
+*** Gender *** (remapped to Gender-Value)
+4	Male
+5	Female
+7	Prefer not to say
+
+*** objcomp-compare ***
+4	It's more likely that John Doe is a carrier of cystic fibrosis
+5	It's more likely that the first child of John and Jane Doe will have cystic fibrosis
+6	Both possibilities are equally likely
+8	Don't know
+
+*** oc-child-verbal ***
+1	Definitely will not have cystic fibrosis
+2	Unlikely to have cystic fibrosis
+3	Likely to have cystic fibrosis
+4	Definitely will have cystic fibrosis
+5	Do not know
+
+*** oc-status-verbal ***
+1	Definitely not a carrier of cystic fibrosis
+2	Unlikely to be a carrier of cystic fibrosis
+3	Likely to be a carrier of cystic fibrosis
+4	Definitely a carrier of cystic fibrosis
+5	Do not know
+
+*** Result-Noticed ***
+1	Yes, and I read it
+2	Yes, but I didn't read it
+3	Not sure
+4	No
+
+*** Result-Understood *** (remapped to Result-Understood-Value)
+2	not at all easy1
+3	2
+4	3
+5	4
+6	5
+7	6
+8	very easy7
+
+NOTE: For questions 1-13 of the modified Scheuner et al. scale, responses 1 through 4 corresponded to Qualtrics codes of 1 through 4; therefore no remapping was necessary
+
+*** Scheuner-14 *** (remapped to Scheuner-14-Value)
+2	not effectively at all1
+3	2
+4	3
+5	very effectively4
+
+*** Scheuner-15 *** (remapped to Scheuner-15-Value)
+2	not effectively at all1
+3	2
+4	3
+5	very effectively4
+
+*** Scheuner-16 *** (remapped to Scheuner-16-Value)
+2	not effectively at all1
+3	2
+4	3
+5	very effectively4
+
+*** Scheuner-17 *** (remapped to Scheuner-17-Value)
+2	not effectively at all1
+3	2
+4	3
+5	very effectively4
+
+*** Scheuner-18 *** (remapped to Scheuner-18-Value)
+2	not effectively at all1
+3	2
+4	3
+5	very effectively4
+
+NOTE: 
+
+*** SNumeracy-1 ***
+1	Not at all good1
+6	Extremely good6
+
+*** SNumeracy-2 ***
+1	Not at all good1
+6	Extremely good6
+
+*** SNumeracy-3 ***
+1	Not at all good1
+6	Extremely good6
+
+*** SNumeracy-4 ***
+1	Not at all good1
+6	Extremely good6
+
+*** SNumeracy-5 ***
+1	Not at all helpful1
+6	Extremely helpful6
+
+*** SNumeracy-6 ***
+1	Always prefer words1
+6	Always prefer numbers6
+
+*** SNumeracy-7 ***
+1	Always prefer percentages1
+6	Always prefer words6
+
+*** SNumeracy-8 ***
+1	Never1
+6	Very often6

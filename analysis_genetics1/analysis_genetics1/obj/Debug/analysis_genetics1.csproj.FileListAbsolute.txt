@@ -1,0 +1,27 @@
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.csprojAssemblyReference.cache
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.Properties.Resources.resources
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.csproj.GenerateResource.cache
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.csproj.CoreCompileInputs.cache
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.Form1.resources
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\bin\Debug\analysis_genetics1.exe.config
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\bin\Debug\analysis_genetics1.exe
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\bin\Debug\analysis_genetics1.pdb
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.exe
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.pdb
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\bin\Debug\ChoETL.dll
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\bin\Debug\System.CodeDom.dll
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\bin\Debug\System.Data.SqlClient.dll
+C:\Users\grecc\Dropbox (Gabe and Ellen)\Projects\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.csproj.CopyComplete
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\bin\Debug\analysis_genetics1.exe.config
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\bin\Debug\analysis_genetics1.exe
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\bin\Debug\analysis_genetics1.pdb
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.csprojAssemblyReference.cache
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.Form1.resources
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.Properties.Resources.resources
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.csproj.GenerateResource.cache
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.csproj.CoreCompileInputs.cache
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.csproj.CopyComplete
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.exe
+C:\Users\grecc\Dropbox (Gabe and Ellen)\GENOMICS\Gabe - CF Study\for_github\analysis_genetics1\analysis_genetics1\obj\Debug\analysis_genetics1.pdb
