@@ -12,5 +12,8 @@ R code for conducting the analyses described in the paper. The code for the prim
 Results_TidyClean.tsv.txt:
 Data file. 2019.05.03_Genetic-Reports-Analysis-Code.R expects to find this file in the working directory.
 
+2019.05.03_Genetic-Reports-Analysis-Code.pdf:
+Knit document that includes the output of running the code in 2019.05.03_Genetic-Reports-Analysis-Code.R as a PDF file.
+
 2019.05.03_Genetic-Reports-Analysis-Code.html:
-Knit document that includes the output of running the code in 2019.05.03_Genetic-Reports-Analysis-Code.R.
+Knit document that includes the output of running the code in 2019.05.03_Genetic-Reports-Analysis-Code.R as an HTML file.
