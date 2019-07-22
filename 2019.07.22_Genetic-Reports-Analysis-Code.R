@@ -452,6 +452,19 @@ wilcox.test(likely$oc.child.slider_1 ~ likely$Design)
 wilcox.test(unlikely$oc.child.slider_1 ~ unlikely$Design)
 
 
+d$Clearly.Wrong = (d$TestResult == "Positive" & (d$oc.child.verbal == 1 | d$oc.child.verbal == 4)) |
+  (d$TestResult == "Negative" & (d$oc.child.verbal == 3 | d$oc.child.verbal == 4))
+
+control <- filter(d, d$Design=="Control")$Clearly.Wrong
+ucd <- filter(d, d$Design=="UCD")$Clearly.Wrong
+
+control_mean <- formatC(100 * round(mean(control, na.rm=TRUE), 2), format='f', digits=0)
+ucd_mean <- formatC(100 * round(mean(ucd, na.rm=TRUE), 2), format='f', digits=0)
+print(paste0("Control: ", control_mean, "% clearly wrong"))
+print(paste0("UCD: ", ucd_mean, "% clearly wrong"))
+
+print(chisq.test(table(d$Clearly.Wrong, d$Design)))
+
 #################################################
 # Exploring possible covariates and demographic variables
 #################################################
@@ -517,3 +530,33 @@ print(summary(aov(oc.score ~ Education_low_vs_high * Design, data = d, na.action
 print(summary(aov(subj.understanding ~ Education_low_vs_high * Design, data = d, na.action=na.omit)))
 print(summary(aov(communication.efficacy ~ Education_low_vs_high * Design, data = d, na.action=na.omit)))
 print(summary(aov(subj.clarity ~ Education_low_vs_high * Design, data = d, na.action=na.omit)))
+
+###########################################
+# New analyses - following up on reviewer questions
+###########################################
+
+d$University <- mapvalues(d$Education,
+                                     from=c(2,3,4,5,7),
+                                     to=c(0,0,1,1,1))
+no_uni = filter(d, d$University == 0)
+
+print(summary(aov(oc.score ~ TestResult * Design, data = no_uni, na.action=na.omit)))
+print(summary(aov(subj.understanding ~ TestResult * Design, data = no_uni, na.action=na.omit)))
+print(summary(aov(communication.efficacy ~ TestResult * Design, data = no_uni, na.action=na.omit)))
+print(summary(aov(subj.clarity ~ TestResult * Design, data = no_uni, na.action=na.omit)))
+
+analyse.by.design(no_uni, "oc.score", "No_Uni Risk probability comprehension", xlim=c(0, 7), xlab="Number of questions answered correctly")
+analyse.by.design(no_uni, "subj.understanding", "No_Uni Subjective comprehension", xlim=c(1, 7))
+analyse.by.design(no_uni, "subj.clarity", "No_Uni Subjective clarity", bw=.5, ylim=c(0,.4))
+analyse.by.design(no_uni, "communication.efficacy", "No_Uni Communication efficacy", xlim=c(1, 4), ylim=c(0,.7))
+analyse.by.design(no_uni, "Next.Steps.Average", "No_Uni Actionability", xlim=c(1, 7), ylim=c(0,.35))
+analyse.by.design(no_uni, "Result.Understood.Value", "No_Uni How easy is it to understand the result summary?", xlim=c(1, 7), bw=.45, ylim=c(0,.55))
+
+low_sns = filter(d, d$subjective.numeracy < 4.2)
+
+analyse.by.design(low_sns, "oc.score", "Low_SNS Risk probability comprehension", xlim=c(0, 7), xlab="Number of questions answered correctly")
+analyse.by.design(low_sns, "subj.understanding", "Low_SNS Subjective comprehension", xlim=c(1, 7))
+analyse.by.design(low_sns, "subj.clarity", "Low_SNS Subjective clarity", bw=.5, ylim=c(0,.4))
+analyse.by.design(low_sns, "communication.efficacy", "Low_SNS Communication efficacy", xlim=c(1, 4), ylim=c(0,.7))
+analyse.by.design(low_sns, "Next.Steps.Average", "Low_SNS Actionability", xlim=c(1, 7), ylim=c(0,.35))
+analyse.by.design(low_sns, "Result.Understood.Value", "Low_SNS How easy is it to understand the result summary?", xlim=c(1, 7), bw=.45, ylim=c(0,.55))
