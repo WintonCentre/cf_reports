@@ -247,6 +247,11 @@ print(shapiro.test(d$subj.understanding))
 print(shapiro.test(d$subj.clarity))
 print(shapiro.test(d$oc.score))
 
+print(d %>% dplyr::group_by(TestResult, Design) %>% dplyr::summarise(shapiro.test(subj.understanding)$p.value))
+print(d %>% dplyr::group_by(TestResult, Design) %>% dplyr::summarise(shapiro.test(subj.clarity)$p.value))
+print(d %>% dplyr::group_by(TestResult, Design) %>% dplyr::summarise(shapiro.test(oc.score)$p.value))
+
+
 print("Running U-tests as variables of interest are not normally distributed.")
 
 print("Key hypothesis tests that study was powered for")

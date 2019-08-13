@@ -10,7 +10,19 @@ Some variables were assigned unintuitive codes by Qualtrics and had to be remapp
 R code for conducting the analyses described in the paper. The code for the primary analyses can be found after some boilerplate for pretty-printing the results of statistical tests (line ~236 onward). Code for more exploratory analyses follows.
 
 Results_TidyClean.tsv.txt:
-Data file. 2019.05.03_Genetic-Reports-Analysis-Code.R expects to find this file in the working directory.
+Data file, formatted as a tab-separated value file. 2019.05.03_Genetic-Reports-Analysis-Code.R expects to find this file in the working directory.
+
+Results_TidyClean.tsv.xlsx:
+Results_TidyClean.tsv.txt, as an Excel file.
+
+CF_Responses_Categorized_All.xlsx:
+Participant responses to selected questions of interest, categorized by three different raters.
+
+CF_Responses_Key_Mapping.xlsx:
+The mapping between a participant's "ComboID" as given in CF_Responses_Categorized_All.xlsx and that participant's round, within-round participant number, and reports viewed.
+
+Nonparametric-Power.R:
+Code for the power analysis of the Scheirer-Ray-Hare extension of the Kruskal Wallis test. 
 
 2019.07.22_Genetic-Reports-Analysis-Code.pdf:
 Knit document that includes the output of running the code in 2019.07.22_Genetic-Reports-Analysis-Code.R as a PDF file.
