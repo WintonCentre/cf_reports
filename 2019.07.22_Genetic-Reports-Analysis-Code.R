@@ -565,3 +565,21 @@ analyse.by.design(low_sns, "subj.clarity", "Low_SNS Subjective clarity", bw=.5, 
 analyse.by.design(low_sns, "communication.efficacy", "Low_SNS Communication efficacy", xlim=c(1, 4), ylim=c(0,.7))
 analyse.by.design(low_sns, "Next.Steps.Average", "Low_SNS Actionability", xlim=c(1, 7), ylim=c(0,.35))
 analyse.by.design(low_sns, "Result.Understood.Value", "Low_SNS How easy is it to understand the result summary?", xlim=c(1, 7), bw=.45, ylim=c(0,.55))
+
+men = filter(d, d$Gender.Value == "Male")
+
+analyse.by.design(men, "oc.score", "MEN Risk probability comprehension", xlim=c(0, 7), xlab="Number of questions answered correctly")
+analyse.by.design(men, "subj.understanding", "MEN Subjective comprehension", xlim=c(1, 7))
+analyse.by.design(men, "subj.clarity", "MEN Subjective clarity", bw=.5, ylim=c(0,.4))
+analyse.by.design(men, "communication.efficacy", "MEN Communication efficacy", xlim=c(1, 4), ylim=c(0,.7))
+analyse.by.design(men, "Next.Steps.Average", "MEN Actionability", xlim=c(1, 7), ylim=c(0,.35))
+analyse.by.design(men, "Result.Understood.Value", "MEN How easy is it to understand the result summary?", xlim=c(1, 7), bw=.45, ylim=c(0,.55))
+
+women = filter(d, d$Gender.Value == "Female")
+
+analyse.by.design(women, "oc.score", "WOMEN Risk probability comprehension", xlim=c(0, 7), xlab="Number of questions answered correctly")
+analyse.by.design(women, "subj.understanding", "WOMEN Subjective comprehension", xlim=c(1, 7))
+analyse.by.design(women, "subj.clarity", "WOMEN Subjective clarity", bw=.5, ylim=c(0,.4))
+analyse.by.design(women, "communication.efficacy", "WOMEN Communication efficacy", xlim=c(1, 4), ylim=c(0,.7))
+analyse.by.design(women, "Next.Steps.Average", "WOMEN Actionability", xlim=c(1, 7), ylim=c(0,.35))
+analyse.by.design(women, "Result.Understood.Value", "WOMEN How easy is it to understand the result summary?", xlim=c(1, 7), bw=.45, ylim=c(0,.55))
